@@ -18,7 +18,7 @@ class PokemonsController < ApplicationController
 			@p.save
 		end
 		# redirect_to "/trainers/" + @p.trainer_id.to_s
-		redirect_to trainer_path(@pokemon.trainer_id)
+		redirect_to trainer_path(@p.trainer_id)
 	end
 
 	def destroy
