@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   devise_for :pokemons
   resources :pokemons
   patch "capture", to: "pokemons#capture", as: :capture
-  patch "damage", to: "pokemons#damage", as: :damage 
+  patch "damage", to: "pokemons#damage", as: :damage
+  get 'pokemons/new', to: 'pokemons#new'
+  post "pokemons", to: "pokemons#create_new", as: :create_new
 end

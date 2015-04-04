@@ -13,7 +13,7 @@
               			 <%= button_to "Damage!", damage_path(id: p), :class => "button small", :method => :patch %>
               		
               			<% if current_trainer == @trainer %>
-             				<%= button_to "Create New Pokemon", new_pokemon_path, :class => "button small", :method => :get %>
+             				<%= button_to "Create New Pokemon", create_new_path, :class => "button small", :method => :get %>
                 		<% end %>
 	              
 	              
